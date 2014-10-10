@@ -1,0 +1,45 @@
+<!-- 
+    Author Details
+    ==============
+    Author: Ranjith Pandi
+
+    Author URL: http://ranjithpandi.com
+
+    Attribution is must on every page, where this work is used.
+
+    For Attribution removal request. please consider contacting us through http://ranjithpandi.com/#contact
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo List</title>
+<link rel="stylesheet" href="styles/bootstrap.min.css" />
+<link rel="stylesheet" href="styles/jquery-ui.min.css" />
+<link rel="stylesheet" href="styles/jquery-ui.structure.min.css" />
+<link rel="stylesheet" href="styles/jquery-ui.theme.min.css" />
+<link rel="stylesheet" href="styles/todo.css" />
+</head>
+<body>
+<header>
+    <h3>TODO List</h3>
+</header>
+<div class="container" id="todo-container">
+    <div class="todo-list add-list place-holder"></div>
+</div>
+
+<div class="todo-details">
+    <div class="todo-title todo-editable"></div>
+    <div class="todo-desc todo-editable"></div>
+    <input type="text" id="datepicker" value="" placeholder="Due Date (dd/mm/yyyy)" tabIndex="-1">
+</div>
+
+<script type="text/javascript" src="javascript/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+<script type="text/javascript" src="javascript/todo.js"></script>
+<script type="text/javascript">
+$('todo-container').todoList({});
+</script>
+</body>
+</html>
